@@ -9,8 +9,6 @@ apiVersion: azure.crossplane.io/v1beta1
 kind: ProviderConfig
 metadata:
  name: default
- annotations:
-    config.kubernetes.io/depends-on: pkg.crossplane.io/Provider/provider-azure 
 spec:
  credentials:
    source: Secret
